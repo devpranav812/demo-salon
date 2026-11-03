@@ -1,0 +1,6 @@
+{
+  "name": "Maison Élan — Luxury Unisex Salon",
+  "description": "Experience personalized hair, beauty, and grooming at Maison Élan. Thoughtful details, expert hands, and bespoke luxury salon experiences.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

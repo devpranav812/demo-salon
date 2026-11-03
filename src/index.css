@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  
+  --color-warm-ivory: #FAF8F5;
+  --color-soft-beige: #F4EFEA;
+  --color-soft-sand: #EFE8DE;
+  --color-deep-espresso: #241E1A;
+  --color-muted-taupe: #756C63;
+  --color-champagne-gold: #C49A6C;
+  --color-champagne-light: #DFC4A4;
+  --color-champagne-dark: #A47B4B;
+  --color-warm-blush: #F9F5F0;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    color: #241E1A;
+    background-color: #FAF8F5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F5F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #EAE5DC;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B59A72;
+}
+
+/* Image fallback shimmer */
+.luxury-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(234, 229, 220, 0.4) 0%,
+    rgba(247, 245, 240, 0.8) 50%,
+    rgba(234, 229, 220, 0.4) 100%
+  );
+  background-size: 200% 100%;
+}
